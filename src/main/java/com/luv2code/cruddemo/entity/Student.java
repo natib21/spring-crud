@@ -18,17 +18,17 @@ public class Student {
 
 
     @Column(name="last_name")
-    private String lasttName;
+    private String lastName;
 
-    @Column(name="emain")
+    @Column(name="email")
     private String email;
 
     //define constructors
 
     public Student(){}
-    public Student(String email, String lasttName, String firstName) {
+    public Student(String email, String lastName, String firstName) {
         this.email = email;
-        this.lasttName = lasttName;
+        this.lastName = lastName;
         this.firstName = firstName;
     }
 
@@ -51,12 +51,12 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public String getLasttName() {
-        return lasttName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLasttName(String lasttName) {
-        this.lasttName = lasttName;
+    public void setLastName(String lasttName) {
+        this.lastName = lasttName;
     }
 
     public String getEmail() {
@@ -76,7 +76,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
-                ", lasttName='" + lasttName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
